@@ -1496,7 +1496,7 @@ static id _unboxOCObjectToJS(id obj)
     return sizeOfStructTypes(structTypes);
 }
 
-+ (void)getStructDataWidthDict:(void *)structData dict:(NSDictionary *)dict structDefine:(NSDictionary *)structDefine
++ (void)getStructDataWithDict:(void *)structData dict:(NSDictionary *)dict structDefine:(NSDictionary *)structDefine
 {
     return getStructDataWithDict(structData, dict, structDefine);
 }

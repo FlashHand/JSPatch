@@ -10,6 +10,7 @@
 		2D0DF7071B22F75C005695DA /* inheritTest.js in Resources */ = {isa = PBXBuildFile; fileRef = 2D0DF7061B22F75C005695DA /* inheritTest.js */; };
 		2D5D89211B0B8BFF009382EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D89181B0B8BFF009382EC /* AppDelegate.m */; };
 		2D5D89251B0B8BFF009382EC /* JPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D5D891E1B0B8BFF009382EC /* JPViewController.m */; };
+		2D6111451C705C2900F13C97 /* JPCATransform3D.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6111441C705C2900F13C97 /* JPCATransform3D.m */; };
 		2D6D12FD1B0B8CF20095A435 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D6D12FA1B0B8CF20095A435 /* Images.xcassets */; };
 		2D6D12FF1B0B8CF20095A435 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6D12FC1B0B8CF20095A435 /* main.m */; };
 		2D6D13011B0B8CFF0095A435 /* demo.js in Resources */ = {isa = PBXBuildFile; fileRef = 2D6D13001B0B8CFF0095A435 /* demo.js */; };
@@ -71,6 +72,8 @@
 		2D5D89181B0B8BFF009382EC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2D5D891D1B0B8BFF009382EC /* JPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPViewController.h; sourceTree = "<group>"; };
 		2D5D891E1B0B8BFF009382EC /* JPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPViewController.m; sourceTree = "<group>"; };
+		2D6111431C705C2900F13C97 /* JPCATransform3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPCATransform3D.h; sourceTree = "<group>"; };
+		2D6111441C705C2900F13C97 /* JPCATransform3D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPCATransform3D.m; sourceTree = "<group>"; };
 		2D6D12FA1B0B8CF20095A435 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2D6D12FB1B0B8CF20095A435 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D6D12FC1B0B8CF20095A435 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -226,6 +229,8 @@
 				3613C34B1C6329F300E915CB /* JPCGPath.m */,
 				3613C34C1C6329F300E915CB /* JPCGTransform.h */,
 				3613C34D1C6329F300E915CB /* JPCGTransform.m */,
+				2D6111431C705C2900F13C97 /* JPCATransform3D.h */,
+				2D6111441C705C2900F13C97 /* JPCATransform3D.m */,
 				3613C34E1C6329F300E915CB /* JPCoreGraphics.h */,
 				3613C34F1C6329F300E915CB /* JPCoreGraphics.m */,
 			);
@@ -485,6 +490,7 @@
 				3613C3811C6329F300E915CB /* JPStructPointer.m in Sources */,
 				3613C37B1C6329F300E915CB /* JPCGImage.m in Sources */,
 				3613C3831C6329F300E915CB /* JPUIGraphics.m in Sources */,
+				2D6111451C705C2900F13C97 /* JPCATransform3D.m in Sources */,
 				3613C38A1C6329F300E915CB /* mztools.c in Sources */,
 				3613C37C1C6329F300E915CB /* JPCGPath.m in Sources */,
 				3613C37D1C6329F300E915CB /* JPCGTransform.m in Sources */,

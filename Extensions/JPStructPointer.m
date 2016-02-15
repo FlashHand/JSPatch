@@ -31,7 +31,7 @@
                 int size = [self sizeOfStructTypes:structDefine[@"types"]];
                 void *ret = malloc(size);
                 memset(ret, 0, size);
-                [self getStructDataWidthDict:ret dict:[structDict toObject] structDefine:structDefine];
+                [self getStructDataWithDict:ret dict:[structDict toObject] structDefine:structDefine];
                 return [self formatPointerOCToJS:ret];
             }
         }

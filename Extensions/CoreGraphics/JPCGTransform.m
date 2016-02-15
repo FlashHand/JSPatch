@@ -39,21 +39,21 @@ static NSDictionary *transformStructDefine;
     
     context[@"CGAffineTransformTranslate"]       = ^id(NSDictionary *transformDict, CGFloat tx, CGFloat ty) {
         CGAffineTransform trans;
-        [self getStructDataWidthDict:&trans dict:transformDict structDefine:transformStructDefine];
+        [self getStructDataWithDict:&trans dict:transformDict structDefine:transformStructDefine];
         CGAffineTransform translatedTransform = CGAffineTransformTranslate(trans, tx, ty);
         return [self getDictOfStruct:&translatedTransform structDefine:transformStructDefine];
     };
 
     context[@"CGAffineTransformScale"]           = ^id(NSDictionary *transformDict, CGFloat sx, CGFloat sy) {
         CGAffineTransform trans;
-        [self getStructDataWidthDict:&trans dict:transformDict structDefine:transformStructDefine];
+        [self getStructDataWithDict:&trans dict:transformDict structDefine:transformStructDefine];
         CGAffineTransform translatedTransform = CGAffineTransformScale(trans, sx, sy);
         return [self getDictOfStruct:&translatedTransform structDefine:transformStructDefine];
     };
 
     context[@"CGAffineTransformRotate"]          = ^id(NSDictionary *transformDict, CGFloat angle) {
         CGAffineTransform trans;
-        [self getStructDataWidthDict:&trans dict:transformDict structDefine:transformStructDefine];
+        [self getStructDataWithDict:&trans dict:transformDict structDefine:transformStructDefine];
         CGAffineTransform translatedTransform = CGAffineTransformRotate(trans, angle);
         return [self getDictOfStruct:&translatedTransform structDefine:transformStructDefine];
     };
@@ -61,7 +61,7 @@ static NSDictionary *transformStructDefine;
     context[@"CGRectApplyAffineTransform"]       = ^NSDictionary *(NSDictionary *rectDict, NSDictionary *transformDict) {
         CGRect rect;
         CGAffineTransform transform;
-        [self getStructDataWidthDict:&transform dict:transformDict structDefine:transformStructDefine];
+        [self getStructDataWithDict:&transform dict:transformDict structDefine:transformStructDefine];
         [JPCGGeometry rectStruct:&rect ofDict:rectDict];
         CGRect retRect = CGRectApplyAffineTransform(rect, transform);
         return [JPCGGeometry rectDictOfStruct:&retRect];
@@ -74,7 +74,7 @@ static NSDictionary *transformStructDefine;
 }
 + (void)transStruct:(CGAffineTransform *)trans ofDict:(NSDictionary *)dict
 {
-    [self getStructDataWidthDict:trans dict:dict structDefine:transformStructDefine ? transformStructDefine : TRANSFORM_DEFINE];
+    [self getStructDataWithDict:trans dict:dict structDefine:transformStructDefine ? transformStructDefine : TRANSFORM_DEFINE];
 }
 
 @end

@@ -14,7 +14,7 @@
 
 + (void)main:(JSContext *)context
 {
-    NSArray *extensionArray = @[@"JPCGTransform", @"JPCGContext", @"JPCGGeometry", @"JPCGBitmapContext",
+    NSArray *extensionArray = @[@"JPCATransform3D",@"JPCGTransform", @"JPCGContext", @"JPCGGeometry", @"JPCGBitmapContext",
                                             @"JPCGColor", @"JPCGImage", @"JPCGPath"];
     [JPEngine addExtensions:extensionArray];
 }

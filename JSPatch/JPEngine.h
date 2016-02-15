@@ -82,7 +82,7 @@
 + (id)formatOCToJS:(id)obj;
 
 + (int)sizeOfStructTypes:(NSString *)structTypes;
-+ (void)getStructDataWidthDict:(void *)structData dict:(NSDictionary *)dict structDefine:(NSDictionary *)structDefine;
++ (void)getStructDataWithDict:(void *)structData dict:(NSDictionary *)dict structDefine:(NSDictionary *)structDefine;
 + (NSDictionary *)getDictOfStruct:(void *)structData structDefine:(NSDictionary *)structDefine;
 @end
 
